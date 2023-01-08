@@ -1,0 +1,13 @@
+<nav>
+  <div class="logo">
+    <%= link_to "Logo", root_path %>
+  </div>
+  <div class="links">
+    <% if current_author %>
+      <%= link_to "Sign out", destroy_author_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Sign up", new_author_registration_path %>
+      <%= link_to "Sign in", new_author_session_path %>
+    <% end %>
+  </div>
+</nav>
