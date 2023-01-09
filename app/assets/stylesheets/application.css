@@ -18,7 +18,6 @@
  nav {
   background-color: black;
   height:20px;
-  color: white;
   display: flex;
   justify-content: space-between;
 }
