@@ -43,7 +43,7 @@ end
   private
 
   def post_params
-    params.require(:post).permit(:title, :description, :published_at)
+    params.require(:post).permit(:title, :description, :published_at, :category_id)
   end
   
   def set_post

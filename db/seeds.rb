@@ -17,3 +17,7 @@ Author.create([{email: 'adam.autor@test.pl' , password:'1234567'},{email: 'barba
     author: Author.all.sample
   )
 end
+
+Category.create(title: 'Category 1')
+Category.create(title: 'Category 2')
+Category.create(title: 'Category 3')
