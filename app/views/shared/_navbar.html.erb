@@ -5,6 +5,7 @@
   <div class="links">
     <% if current_author %>
       <%= link_to "Sign out", destroy_author_session_path, method: :delete %>
+      <%= link_to "Posts", posts_path %>
     <% else %>
       <%= link_to "Sign up", new_author_registration_path %>
       <%= link_to "Sign in", new_author_session_path %>
